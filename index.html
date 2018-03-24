@@ -55,13 +55,14 @@
                 <form action="salvar.php" enctype="multipart/form-data" name="form" id="form">
                   <b><h2>Digite o seu endereço MAC:</h2></b><br>
                   
-                  <input type="hidden" name="latitude" value="" id="lt" />
-                  <input type="hidden" name="longitude" value="" id="lg" />
-                  
-                  <input type="text" name="mac" size="10" class="form-control" placeholder="ex.: MAC" required="required" id="mac">
-                  <br><br>
-                  <input type="submit" value="Testar"  class="btn btn-primary">    
-                  
+                  <div class="form-group">
+                    <input type="hidden" name="latitude" value="" id="lt" />
+                    <input type="hidden" name="longitude" value="" id="lg" />
+
+                    <input type="text" name="mac" size="10" class="form-control" placeholder="ex.: MAC" required="required" id="mac">
+                    <br><br>
+                    <input type="submit" value="Testar"  class="btn btn-primary">    
+                  </div>
                 </form>
                 <br><br><br><br>
                               
