@@ -1,1 +1,409 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <meta name="theme-color" content="#00BFFF">
+
+    <Link rel = "icon" href="imagens/logo.png" type = "image/x-icon"/>
+
+    <!--  Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+
+    <!-- importa ícones -->
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+    <!-- Scripts -->
+    <script src="javascript/javascript.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- <script src="js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+
+   <!-- <script> /* aumentar imagem ao passar mouse*/
+    function bigImg(x){
+            x.style.height="400px";
+            x.style.width="490px";
+        }
+
+        function normalImg(x){
+            x.style.height="250px";  // altura
+            x.style.width="340px"; // largura
+        }
+    </script> -->
+
+    <title>Portal Acessibilidade - Página Inicial.</title>
+
+  </head>
+  <body> <!-- onLoad="dataGet();" -->
+    <noscript>
+      Caro leitor!
+      Se você estiver lendo esta mensagem é porque o seu navegador não suporta
+      "javascript" ou porque a permissão de executar "Javascript" está desabilitada.
+      Por favor ative a pemissão para Javascript.
+    </noscript>
+    
+    <!--<a id="topo">&nbsp;</a> âncora de link voltar ao topo -->
+    <section class="center" id="topo">
+      <div class="container-fluid acessibilidade"><!-- tava fluid-->
+        <div class="row">
+          <div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">
+
+            <!-- Start Audima Widget Injection
+            <div id="audimaWidget"></div>
+            <script src="//audio.audima.co/audima-widget.js"></script>
+             End Audima Widget Injection -->
+            
+            <div class="row align-items-center justify-content-center">
+            
+                <button onClick="contraste('escuro');" value="escuro" id="contraste_escuro" class="btn btn-dark botao_menu_ac" title="Contraste escuro" type="button">tema escuro</button>
+                <button onClick="contraste('claro');" value="claro" id="contraste_claro" class="btn btn-light botao_menu_ac" title="Contraste claro" type="button">tema claro</button> <!-- Botão contraste -->
+    
+                <!-- Botões de Acessibilidade -->
+                <button onClick="fonte('a');" class="btn btn-warning botao_menu_ac" title="Aumentar fonte!">A+</button> <!-- Botão fonte + -->
+                <button onClick="fonte('n');" class="btn btn-warning botao_menu_ac" title="Fonte em tamanho normal!">A</button> <!-- Botão tamanho normal de fonte -->
+                <button onClick="fonte('d');" class="btn btn-warning botao_menu_ac" title="Diminuir fonte!">A-</button> <!-- Botão fonte - --> 
+            </div>
+            
+            <!-- <div class="row align-items-center justify-content-center"> -->
+            <div class="atalhos mobile acessibilidade">
+                <div class="row">
+                                                 
+                    <a href="#primeira_noticia" accesskey="1"> <div class="acessibilidade"><strong>Ir para CONTEÚDO PRINCIPAL(ALT + 1)</strong></div></a>&nbsp;&nbsp;
+                    <a href="#" accesskey="2"> <div class="acessibilidade"><strong>Ir para OUTRA PÁGINA(ALT + 2)</strong></div></a>&nbsp;&nbsp;
+                    <a href="contato.html" accesskey="3"> <div class="acessibilidade"><strong>Ir para CONTATO(ALT + 3)</strong></div></a>&nbsp;&nbsp;
+                    
+                                     
+                </div>
+            </div>
+            
+           <!-- <table class="table table-responsive table-active">
+              <tbody>
+                  
+                <tr class="mobile">
+                                                 
+                    <td class="mobile"><a href="#primeira_noticia" accesskey="1"> <div class="acessibilidade"><strong>Ir para CONTEÚDO PRINCIPAL(ALT + 1)</strong></div></a></td>
+                    <td class="mobile"><a href="#" accesskey="2"> <div class="acessibilidade"><strong>Ir para OUTRA PÁGINA(ALT + 2)</strong></div></a></td>
+                    <td class="mobile"><a href="contato.html" accesskey="3"> <div class="acessibilidade"><strong>Ir para CONTATO(ALT + 3)</strong></div></a></td>
+
+                </tr>
+                
+              </tbody>
+            </table> -->
+           <!--  </div>  -->
+           
+            <header>
+                <h1><img src="imagens/logo.png" class="img img-fluid logo" alt="logo do site Portal Acessibilidade">Portal Acessibilidade</h1>
+            </header>
+            
+            <nav class="navbar navbar-expand-lg navbar-light acessibilidade">
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">.
+                <span class="navbar-toggler-icon">.</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                  <li class="nav-item active botao_menu w3-large"> <!-- não existia class="w3-large" -->
+                    <a class="nav-link btn btn-outline-primary acessibilidade" href="index.html" id="link"> <div class="fa fa-home"> Início </div><span class="sr-only">(1)</span></a>
+                  </li>
+                  <li class="nav-item active botao_menu">
+                    <a class="nav-link btn btn-outline-primary acessibilidade" href=""> LINK 2 <span class="sr-only">(2)</span></a>
+                  </li>
+                  <li class="nav-item active botao_menu">
+                    <a class="nav-link btn btn-outline-primary acessibilidade" href=""> LINK 3 <span class="sr-only">(3)</span></a>
+                  </li>
+                  <li class="nav-item active botao_menu">
+                    <a class="nav-link btn btn-outline-primary acessibilidade" href="contato.html"> <div class="fa fa-file-text-o"> Contato </div><span class="sr-only"> (4)</span></a>
+                  </li>
+
+                </ul>
+              </div>               
+            </nav>            
+
+            <div class="box_noticia">
+              <div class="acessibilidade">
+                
+                <div class="row">                    
+                    <div class="col-md-6 noticia acessibilidade">
+                        <a href="menino-ganha-premio-por-aplicativo.html">
+                            <div class="titulo_noticia acessibilidade" id="primeira_noticia"><h2><strong>Menino de Florianópolis ganha prêmio por
+                                aplicativo para ajudar deficientes auditivos.</strong></h2></div>
+                              <div class="texto_noticia acessibilidade"> <!-- texto_noticia -->
+                                Francisco Alexandre Fernandes Batalha, nasceu com deficiência auditiva severa, 
+                                diagnosticada quando ele tinha poucos dias de vida, e recebeu implantes cocleares nos dois ouvidos ainda criança.
+                                
+                              </div>                            
+                        </a>
+                        <!-- </div>  -->
+
+                        <!-- <a href="https://www.facebook.com/sharer/sharer.php?u= URL DA NOTÍCIA AKI " target="_blank" class="ico-facebook"
+                        title="Compartilhe pelo Facebook"><img src="https://png.icons8.com/metro/50/000000/facebook.png"></a> -->
+                    </div>                   
+                    <br>
+
+                    <!-- tava aki o aumentar a imagem ao passar mouse-->
+
+                    <div class="col-md-6 col-xs-6 col-xl-6 col-lg-6">
+                        <br>
+                        <img src="imagens/brasileiro-ganha-premio-internacional.jpg" class="img-fluid rounded img-thumbnail img_noticia_inicio" alt="imagem do menino que ganhou prêmio internacional de acessibilidade" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onfocus="bigImg(this)" onblur="normalImg(this)"/> <!-- width="350px" height= "350px" id="teste" onMouseOvr="aumenwidth="350px" height= "350px" ta(this)" onMouseOut="diminui(this)" img_noticia -->
+                        <br>
+                    </div> 
+
+                </div><!-- row -->
+                
+                <hr/><br>
+
+                <!--  =====================================================================  -->
+
+                <div class="row">                    
+                    <div class="col-md-6 col-xs-6 col-xl-6 col-lg-6 noticia acessibilidade">
+                        <a href="acessibilidade-de-pessoas-com-deficiencia-sites-e-inferior-1.html" class="acessibilidade">
+                           <div class="titulo_noticia acessibilidade"> <h2><strong>Acessibilidade de pessoas com deficiência a sites é inferior a 1%.</strong></h2></div>
+                              <div class="texto_noticia acessibilidade">
+                                Um levantamento feito pelo Movimento Web para Todos, em parceria com a BigData Corp,
+                                mostrou que, dos 14 milhões de sites ativos no Brasil, menos de 1% passou nos testes de 
+                                acessibilidade para pessoas com deficiência. Quando se fala dos sites governamentais das três esferas 
+                                (federal, estadual e municipal), o percentual cai para 0,34%. 
+                                <!-- fonte: <a href="https://agenciabrasil.ebc.com.br/geral/noticia/2019-10/acessibilidade-de-pessoas-com-deficiencia-sites-e-inferior-1" class="acessibilidade"></i>https://agenciabrasil.ebc.com.br/geral/noticia/2019-10/acessibilidade-de-pessoas-com-deficiencia-sites-e-inferior-1</i></a> -->
+                              </div>                            
+                        </a>
+                        <!-- </div>  -->
+                        <!-- <a href="https://www.facebook.com"><img src="https://png.icons8.com/metro/50/000000/facebook.png"></a>
+
+                        <a href="https://www.facebook.com/sharer/sharer.php?u= URL DA NOTÍCIA AKI" target="_blank" class="ico-facebook"
+                        title="Compartilhe pelo Facebook"><img src="https://png.icons8.com/metro/50/000000/facebook.png"></a> -->
+                    </div>                   
+                                    
+
+                    <div class="col-md-6 col-xs-6 col-xl-6 col-lg-6">
+                        <img src="imagens/icone_acessibilidade.png" class="img-fluid img-responsive rounded img-thumbnail img_noticia_inicio" alt="imagem do ícone de acessibilidade" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onfocus="bigImg(this)" onblur="normalImg(this)" /> <!-- width="350px" height= "350px"onMouseOver="aumenta(this)" onMouseOut="diminui(this)" -->
+                        
+                    </div> 
+
+                </div><!-- row -->
+                
+                <hr/><br>
+
+                <!--  =====================================================================  -->
+
+                <div class="row">                    
+                    <div class="col-md-6 noticia acessibilidade">
+                        <a href="saiba-sobre-deficiencia-visual.html">
+                            <div class="titulo_noticia acessibilidade"><h2><strong>Saiba mais sobre deficiência visual.</strong></h2></div>
+                              <div class="texto_noticia acessibilidade"> A deficiência visual é determinada pela perda total ou parcial, não podendo ser corrigida por lentes ou tratamentos cirúrgicos. A perda visual pode ser súbita e grave ou ser o resultado de uma deterioração gradual, em que objetos a grande distância se tornam cada vez mais difíceis de ver. (leia mais).
+                              </div>                            
+                        </a>
+                        <!-- </div>  -->
+                        <!-- <a href="https://www.facebook.com"><img src="https://png.icons8.com/metro/50/000000/facebook.png"></a>
+
+                        <a href="https://www.facebook.com/sharer/sharer.php?u= URL DA NOTÍCIA AKI" target="_blank" class="ico-facebook"
+                        title="Compartilhe pelo Facebook"><img src="https://png.icons8.com/metro/50/000000/facebook.png"></a> -->
+                    </div>                   
+                    <br>
+
+                    <div class="col-md-6 col-xs-6 col-xl-6 col-lg-6">
+                        <br>
+                        <img src="imagens/o-que-voce-sabe-sobre-catarata-entenda-mais-aqui.jpg" class="img-fluid rounded img-thumbnail img_noticia_inicio" alt="imagem em desenho de olhos com catarata" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onfocus="bigImg(this)" onblur="normalImg(this)" /> <!--onMouseOver="aumenta(this)" onMouseOut="diminui(this)" -->
+                        <br>
+                    </div> 
+
+                </div><!-- row -->
+                
+                <hr/><br>
+
+                <!--  =====================================================================  -->
+
+                <div class="row">                    
+                    <div class="col-md-6 noticia acessibilidade">
+                        <a href="#" >
+                            <div class="titulo_noticia acessibilidade"><h2><strong>Menino de Florianópolis ganha prêmio por
+                                aplicativo para ajudar deficientes auditivos.</strong></h2></div>
+                              <div class="texto_noticia acessibilidade"> <!-- texto_noticia -->
+                                Francisco Alexandre Fernandes Batalha, nasceu com deficiência auditiva severa, 
+                                diagnosticada quando ele tinha poucos dias de vida, e recebeu implantes cocleares nos dois ouvidos ainda criança.
+                              </div>                            
+                        </a>
+                        <!-- </div>  -->
+                        <!-- <a href="https://www.facebook.com"><img src="https://png.icons8.com/metro/50/000000/facebook.png"></a>
+
+                        <a href="https://www.facebook.com/sharer/sharer.php?u= URL DA NOTÍCIA AKI" target="_blank" class="ico-facebook"
+                        title="Compartilhe pelo Facebook"><img src="https://png.icons8.com/metro/50/000000/facebook.png"></a> -->
+                    </div>                   
+                    <br>
+
+                    <div class="col-md-6 col-xs-6 col-xl-6 col-lg-6">
+                        <br>
+                        <img src="imagens/brasileiro-ganha-premio-internacional.jpg" class="img-fluid rounded img-thumbnail img_noticia_inicio" alt="imagem do ganhador do prêmio acessibilidade" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onfocus="bigImg(this)" onblur="normalImg(this)" /> <!--onMouseOver="aumenta(this)" onMouseOut="diminui(this)" -->
+                        <br>
+                    </div> 
+
+                </div><!-- row -->
+                
+                <hr/><br>
+
+                <!--  =====================================================================  -->
+
+                <div class="row">                    
+                    <div class="col-md-6 noticia acessibilidade">
+                        <a href="#" >
+                            <div class="titulo_noticia acessibilidade"><h2><strong>Menino de Florianópolis ganha prêmio por
+                                aplicativo para ajudar deficientes auditivos.</strong></h2></div>
+                              <div class="texto_noticia acessibilidade"> <!-- texto_noticia -->
+                                Francisco Alexandre Fernandes Batalha, nasceu com deficiência auditiva severa, 
+                                diagnosticada quando ele tinha poucos dias de vida, e recebeu implantes cocleares nos dois ouvidos ainda criança.
+                              </div>                            
+                        </a>
+                        <!-- </div>  -->
+                        <!-- <a href="https://www.facebook.com"><img src="https://png.icons8.com/metro/50/000000/facebook.png"></a>
+
+                        <a href="https://www.facebook.com/sharer/sharer.php?u= URL DA NOTÍCIA AKI" target="_blank" class="ico-facebook"
+                        title="Compartilhe pelo Facebook"><img src="https://png.icons8.com/metro/50/000000/facebook.png"></a> -->
+                    </div>                   
+                    <br>
+
+                    <div class="col-md-6 col-xs-6 col-xl-6 col-lg-6">
+                        <br>
+                        <img src="imagens/brasileiro-ganha-premio-internacional.jpg" class="img-fluid rounded img-thumbnail img_noticia_inicio" alt="menino que ganhou o prêmio" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onfocus="bigImg(this)" onblur="normalImg(this)" /> <!--onMouseOver="aumenta(this)" onMouseOut="diminui(this)" -->
+                        <br>
+                    </div> 
+
+                </div><!-- row -->
+                
+                <hr/><br>
+
+                <!--  =====================================================================  -->
+
+                <div class="row">                    
+                    <div class="col-md-6 noticia acessibilidade">
+                        <a href="#" >
+                            <div class="titulo_noticia acessibilidade"><h2><strong>Menino de Florianópolis ganha prêmio por
+                                aplicativo para ajudar deficientes auditivos.</strong></h2></div>
+                              <div class="texto_noticia acessibilidade"> <!-- texto_noticia -->
+                                Francisco Alexandre Fernandes Batalha, nasceu com deficiência auditiva severa, 
+                                diagnosticada quando ele tinha poucos dias de vida, e recebeu implantes cocleares nos dois ouvidos ainda criança.
+                              </div>                            
+                        </a>
+                        <!-- </div>  -->
+                        <!-- <a href="https://www.facebook.com"><img src="https://png.icons8.com/metro/50/000000/facebook.png"></a>
+
+                        <a href="https://www.facebook.com/sharer/sharer.php?u= URL DA NOTÍCIA AKI" target="_blank" class="ico-facebook"
+                        title="Compartilhe pelo Facebook"><img src="https://png.icons8.com/metro/50/000000/facebook.png"></a> -->
+                    </div>                   
+                    <br>
+
+                    <div class="col-md-6 col-xs-6 col-xl-6 col-lg-6">
+                        <br>
+                        <img src="imagens/brasileiro-ganha-premio-internacional.jpg" class="img-fluid rounded img-thumbnail img_noticia_inicio" alt="menino do prêmio" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onfocus="bigImg(this)" onblur="normalImg(this)" /> <!--onMouseOver="aumenta(this)" onMouseOut="diminui(this)" -->
+                        <br>
+                    </div> 
+
+                </div><!-- row -->
+                
+                <hr/>
+                <!--  =====================================================================  -->
+
+              </div><!-- class acessibilidade  -->
+            </div>
+
+            <footer>
+                <a href="#topo" class="acessibilidade"> <div class="fa fa-arrow-circle-up">Voltar para o topo</div></a>  
+                <!-- <a href='#' id='backtotop'><i class='fa fa-chevron-up'></i>Topo</a> -->      
+                
+            </footer> 
+            
+            <!--<section class="rodape acessibilidade">
+                &copy; Alunos do Flávio
+            </section> -->    
+
+          </div>
+          
+       
+       <!-- TESTE DE COOKIES <div class="gotit">
+            <div>
+              <p>We use cookies in order to improve your browsing experience on sugarcane.org, not to collect personal information. By continuing to use the site, you agree that it is OK. <a href="https://sugarcane.org/privacy-policy">Read about our privacy policy.</a></p>
+              <a href="#" title="GOT IT">GOT IT</a>
+            </div>
+        </div> -->
+        
+        
+        <!--<form>
+        	<select name="contraste" id="contraste">
+        		<option value="escuro">Tema escuro</option>
+        		<option value="claro">Tema claro</option>
+        		
+        	</select>
+        	<label for="dataInicio">Início</label>
+        	<input type="date" name="dataInicio" id="dataInicio">
+        	<label for="dataFinal">Final</label>
+        	<input type="date" name="dataFinal" id="dataFinal"> 
+        </form> -->
+            
+       <!-- <script>
+        
+      /*  document.getElementById('contraste_escuro').value; //= localStorage.contraste_escuro;
+        document.getElementById('contraste_claro').value; // = localStorage.contraste_claro;
+        document.getElementById('abc').value;
+         var salvarData  =  function contrastee(){
+            //document.getElementById('contraste_escuro').value;
+            
+            var contraste = document.getElementById("contraste", abc).value;
+            alert("aaa");
+            //var contraste = document.ElementById("contraste", contraste_claro).value;
+            
+            localStorage.setItem('contraste', contraste_escuro);
+        };
+        
+        document.onchange = salvarData;  */
+        
+        
+        /** if (localStorage.contraste) {
+        	document.getElementById('contraste').value = localStorage.contraste;
+        }
+       
+        var salvarData = function() { //var salvarData = function() {
+        
+        	var contraste = document.getElementById('contraste').value;
+        	
+        	localStorage.setItem('contraste', contraste);
+        	
+        	function contraste(){
+        	    var contraste = contraste('escuro');
+        	} */
+           
+        /*	if (contraste == "escuro"){
+        	    function contraste(escuro)
+        	    //alert('escuro'); 
+        	    
+        	} else {
+        	    function contraste(claro)
+        	    
+        	} 
+          
+                alert(contraste); 
+           
+        	
+        };
+        
+       document.onchange = salvarData; //contraste('claro');
+       
+        
+       
+        </script> -->
+       
+
+        </div>      
+
+      </div>
+    </section>
+</html>    
