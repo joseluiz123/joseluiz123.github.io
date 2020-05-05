@@ -30,22 +30,10 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <!-- <script src="js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
 
-   <!-- <script> /* aumentar imagem ao passar mouse*/
-    function bigImg(x){
-            x.style.height="400px";
-            x.style.width="490px";
-        }
-
-        function normalImg(x){
-            x.style.height="250px";  // altura
-            x.style.width="340px"; // largura
-        }
-    </script> -->
-
-    <title>Portal Acessibilidade - Página Inicial.</title>
+    <title>ALUCARS - Página Inicial.</title>
 
   </head>
-  <body> <!-- onLoad="dataGet();" -->
+  <body> 
     <noscript>
       Caro leitor!
       Se você estiver lendo esta mensagem é porque o seu navegador não suporta
@@ -53,57 +41,13 @@
       Por favor ative a pemissão para Javascript.
     </noscript>
     
-    <!--<a id="topo">&nbsp;</a> âncora de link voltar ao topo -->
     <section class="center" id="topo">
       <div class="container-fluid acessibilidade"><!-- tava fluid-->
         <div class="row">
-          <div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">
-
-            <!-- Start Audima Widget Injection
-            <div id="audimaWidget"></div>
-            <script src="//audio.audima.co/audima-widget.js"></script>
-             End Audima Widget Injection -->
-            
-            <div class="row align-items-center justify-content-center">
-            
-                <button onClick="contraste('escuro');" value="escuro" id="contraste_escuro" class="btn btn-dark botao_menu_ac" title="Contraste escuro" type="button">tema escuro</button>
-                <button onClick="contraste('claro');" value="claro" id="contraste_claro" class="btn btn-light botao_menu_ac" title="Contraste claro" type="button">tema claro</button> <!-- Botão contraste -->
-    
-                <!-- Botões de Acessibilidade -->
-                <button onClick="fonte('a');" class="btn btn-warning botao_menu_ac" title="Aumentar fonte!">A+</button> <!-- Botão fonte + -->
-                <button onClick="fonte('n');" class="btn btn-warning botao_menu_ac" title="Fonte em tamanho normal!">A</button> <!-- Botão tamanho normal de fonte -->
-                <button onClick="fonte('d');" class="btn btn-warning botao_menu_ac" title="Diminuir fonte!">A-</button> <!-- Botão fonte - --> 
-            </div>
-            
-            <!-- <div class="row align-items-center justify-content-center"> -->
-            <div class="atalhos mobile acessibilidade">
-                <div class="row">
-                                                 
-                    <a href="#primeira_noticia" accesskey="1"> <div class="acessibilidade"><strong>Ir para CONTEÚDO PRINCIPAL(ALT + 1)</strong></div></a>&nbsp;&nbsp;
-                    <a href="#" accesskey="2"> <div class="acessibilidade"><strong>Ir para OUTRA PÁGINA(ALT + 2)</strong></div></a>&nbsp;&nbsp;
-                    <a href="contato.html" accesskey="3"> <div class="acessibilidade"><strong>Ir para CONTATO(ALT + 3)</strong></div></a>&nbsp;&nbsp;
-                    
-                                     
-                </div>
-            </div>
-            
-           <!-- <table class="table table-responsive table-active">
-              <tbody>
-                  
-                <tr class="mobile">
-                                                 
-                    <td class="mobile"><a href="#primeira_noticia" accesskey="1"> <div class="acessibilidade"><strong>Ir para CONTEÚDO PRINCIPAL(ALT + 1)</strong></div></a></td>
-                    <td class="mobile"><a href="#" accesskey="2"> <div class="acessibilidade"><strong>Ir para OUTRA PÁGINA(ALT + 2)</strong></div></a></td>
-                    <td class="mobile"><a href="contato.html" accesskey="3"> <div class="acessibilidade"><strong>Ir para CONTATO(ALT + 3)</strong></div></a></td>
-
-                </tr>
-                
-              </tbody>
-            </table> -->
-           <!--  </div>  -->
-           
+          <div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">            
+                      
             <header>
-                <h1><img src="imagens/logo.png" class="img img-fluid logo" alt="logo do site Portal Acessibilidade">Portal Acessibilidade</h1>
+                <h1><img src="imagens/logo.png" class="img img-fluid logo" alt="logo do site de locação de veículos">Alucars</h1>
             </header>
             
             <nav class="navbar navbar-expand-lg navbar-light acessibilidade">
@@ -117,12 +61,7 @@
                   <li class="nav-item active botao_menu w3-large"> <!-- não existia class="w3-large" -->
                     <a class="nav-link btn btn-outline-primary acessibilidade" href="index.html" id="link"> <div class="fa fa-home"> Início </div><span class="sr-only">(1)</span></a>
                   </li>
-                  <li class="nav-item active botao_menu">
-                    <a class="nav-link btn btn-outline-primary acessibilidade" href=""> LINK 2 <span class="sr-only">(2)</span></a>
-                  </li>
-                  <li class="nav-item active botao_menu">
-                    <a class="nav-link btn btn-outline-primary acessibilidade" href=""> LINK 3 <span class="sr-only">(3)</span></a>
-                  </li>
+                  
                   <li class="nav-item active botao_menu">
                     <a class="nav-link btn btn-outline-primary acessibilidade" href="contato.html"> <div class="fa fa-file-text-o"> Contato </div><span class="sr-only"> (4)</span></a>
                   </li>
@@ -136,27 +75,19 @@
                 
                 <div class="row">                    
                     <div class="col-md-6 noticia acessibilidade">
-                        <a href="menino-ganha-premio-por-aplicativo.html">
-                            <div class="titulo_noticia acessibilidade" id="primeira_noticia"><h2><strong>Menino de Florianópolis ganha prêmio por
-                                aplicativo para ajudar deficientes auditivos.</strong></h2></div>
-                              <div class="texto_noticia acessibilidade"> <!-- texto_noticia -->
-                                Francisco Alexandre Fernandes Batalha, nasceu com deficiência auditiva severa, 
-                                diagnosticada quando ele tinha poucos dias de vida, e recebeu implantes cocleares nos dois ouvidos ainda criança.
-                                
+                        <a href="#">
+                            <div class="titulo_noticia acessibilidade" id="primeira_noticia"><h2><strong>CARRO 1.</strong></h2></div>
+                              <div class="texto_noticia acessibilidade">
+                                texto sobre o carro para alugar.
                               </div>                            
                         </a>
-                        <!-- </div>  -->
-
-                        <!-- <a href="https://www.facebook.com/sharer/sharer.php?u= URL DA NOTÍCIA AKI " target="_blank" class="ico-facebook"
-                        title="Compartilhe pelo Facebook"><img src="https://png.icons8.com/metro/50/000000/facebook.png"></a> -->
+                                           
                     </div>                   
                     <br>
 
-                    <!-- tava aki o aumentar a imagem ao passar mouse-->
-
                     <div class="col-md-6 col-xs-6 col-xl-6 col-lg-6">
                         <br>
-                        <img src="imagens/brasileiro-ganha-premio-internacional.jpg" class="img-fluid rounded img-thumbnail img_noticia_inicio" alt="imagem do menino que ganhou prêmio internacional de acessibilidade" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onfocus="bigImg(this)" onblur="normalImg(this)"/> <!-- width="350px" height= "350px" id="teste" onMouseOvr="aumenwidth="350px" height= "350px" ta(this)" onMouseOut="diminui(this)" img_noticia -->
+                        <img src="imagens/huayra.jpg" class="img-fluid rounded img-thumbnail img_noticia_inicio" alt="imagem do carro Pagani Huayra"/>
                         <br>
                     </div> 
 
